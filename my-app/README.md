@@ -27,12 +27,12 @@ npm start
 
 ```
 app/            routes (page.tsx = server component + metadata, *PageClient.tsx = interactive UI)
-components/ui/  Navbar, ProjectCard, SectionTitle, Starfield, HyperspaceLoader, SpacecraftParallax, ThemeToggle, BrandIcons
+components/ui/  Navbar, ProjectCard, SectionTitle, Starfield, HyperspaceLoader, SpacecraftParallax, Spacecraft (SVG art), BrandIcons
 lib/            site.ts (identity), projects.ts (data)
 ```
 
 ## Notes
 
 - Fonts (Orbitron, Rajdhani, Inter) are self-hosted via `next/font` in `app/layout.tsx`.
-- `ThemeToggle` exists and light-mode colours are defined in `globals.css`, but the toggle is not rendered. Add `<ThemeToggle />` to `components/ui/Navbar.tsx` to enable it.
+- The ship drawings are hand-coded SVGs in `components/ui/Spacecraft.tsx`; `SpacecraftParallax` positions one and drifts it on scroll.
 - The contact form currently simulates a send; wire `handleSubmit` in `app/contact/ContactPageClient.tsx` to an API route or email service.

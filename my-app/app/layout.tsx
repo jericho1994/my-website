@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Orbitron, Rajdhani } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Starfield from "@/components/ui/Starfield";
@@ -78,20 +77,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
       className={`${orbitron.variable} ${rajdhani.variable} ${inter.variable}`}
     >
       <body>
-        <ThemeProvider
-          attribute="data-theme"
-          defaultTheme="dark"
-          enableSystem={false}
-        >
-          <HyperspaceLoader />
-          <Starfield />
-          <Navbar />
-          <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
-        </ThemeProvider>
+        <HyperspaceLoader />
+        <Starfield />
+        <Navbar />
+        <main style={{ position: "relative", zIndex: 1 }}>{children}</main>
       </body>
     </html>
   );

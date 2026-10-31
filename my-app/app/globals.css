@@ -19,7 +19,6 @@
   /* Text */
   --color-text-primary:  #e8f4fd;
   --color-text-muted:    #7aaccc;
-  --color-text-accent:   #00d4ff;
 
   /* UI */
   --color-nav-bg:        rgba(0, 8, 20, 0.75);
@@ -35,19 +34,6 @@
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
-}
-
-/* ---------- Light Mode Overrides ---------- */
-[data-theme="light"] {
-  --color-space:         #f0f6ff;
-  --color-space-deep:    #ddeeff;
-  --color-nav-bg:        rgba(240, 246, 255, 0.85);
-  --color-glass-bg:      rgba(255, 255, 255, 0.65);
-  --color-glass-border:  rgba(0, 100, 200, 0.2);
-  --color-glass-hover:   rgba(0, 100, 200, 0.06);
-  --color-text-primary:  #0a1628;
-  --color-text-muted:    #3a6080;
-  --color-text-accent:   #006db3;
 }
 
 /* ---------- Base Reset ---------- */
@@ -69,7 +55,6 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
-  transition: background-color var(--transition-base), color var(--transition-base);
 }
 
 /* ---------- Typography ---------- */
@@ -340,7 +325,7 @@ a:hover {
   font-size: 0.75rem;
 }
 
-/* Round glass icon button (social links, theme toggle) */
+/* Round glass icon button (social links) */
 .icon-btn {
   display: flex;
   align-items: center;
@@ -359,21 +344,6 @@ a:hover {
 .icon-btn:hover {
   color: var(--color-saber-blue);
   box-shadow: 0 0 16px var(--color-saber-blue-glow);
-}
-
-.theme-toggle {
-  width: 40px;
-  height: 40px;
-  color: var(--color-saber-gold);
-}
-.theme-toggle:hover {
-  color: var(--color-saber-gold);
-  box-shadow: 0 0 16px var(--color-saber-gold-glow);
-}
-[data-theme="light"] .theme-toggle,
-[data-theme="light"] .theme-toggle:hover {
-  color: var(--color-text-accent);
-  box-shadow: 0 0 16px rgba(0, 109, 179, 0.4);
 }
 
 /* Pill filter tab on the projects page */

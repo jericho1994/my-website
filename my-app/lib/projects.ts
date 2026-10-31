@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     description:
       "A Star Wars-themed personal portfolio built with Next.js, TypeScript, Framer Motion, and Tailwind CSS featuring hyperspace animations and scroll-driven spacecraft parallax.",
     longDescription:
-      "A fully custom Star Wars-themed portfolio website. Engineered with Next.js 16 App Router, TypeScript, Framer Motion for cinematic animations, and Tailwind CSS v4. Features include a canvas-based hyperspace jump loader, scroll-driven parallax spacecraft backgrounds (X-Wing, TIE Fighter, Millennium Falcon, Star Destroyer), glassmorphism cards, and a dark/light mode toggle.",
+      "A fully custom Star Wars-themed portfolio website. Engineered with Next.js 16 App Router, TypeScript, Framer Motion for cinematic animations, and Tailwind CSS v4. Features include a canvas-based hyperspace jump loader, scroll-driven parallax spacecraft backgrounds (X-Wing, TIE Fighter, Millennium Falcon, Star Destroyer), and glassmorphism cards.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/jericho1994/my-website",
     liveUrl: "#",
